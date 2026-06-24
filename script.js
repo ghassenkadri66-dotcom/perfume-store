@@ -52,11 +52,14 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
     const whatsappNumber = "21653031727";
 
+    const Quantite = document.getElementById("Quantite").value;
+
     const message =
 `Hello, I would like to order ${selectedPerfume}.
 
 Name: ${name}
-Phone: ${phoneNumber}`;
+Phone: ${phoneNumber}
+Quantite : ${Quantite}`;
 
     const url =
 `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

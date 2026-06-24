@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Perfume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home"  >Home</a></li>
+            <li><a href="#collection" >Collection</a></li>
+            <li><a href="#contact" >Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+    </nav>
+
+    <a href="https://wa.me/21612345678"
+class="floating-whatsapp"
+target="_blank">
+    💬
+</a>
+
+    </header>
+
+        <section class="hero" id="home">
+             <div class="hero-content">
+                <h1>Discover the World of Luxury Fragrances</h1>
+
+                <p>
+                    Explore our exclusive collection of premium perfumes crafted for elegance and sophistication.
+                </p>
+
+                <a href="#collection" class="hero-btn">
+                    Explore Collection
+                </a>
+             </div>
+        </section>
+
+
+
+        <section class="collection" id="collection">
+    <h2>Featured Perfumes</h2>
+
+    <div class="perfume-container">
+
+        <div class="perfume-card">
+            <img src="Dior Sauvage.png" alt="Perfume">
+            <h3>Dior Sauvage</h3>
+            <p>Fresh and masculine fragrance.
+            </p>
+            <span>320 DT</span>
+            <button onclick="openOrderModal('Dior Sauvage')">
+                Order via WhatsApp
+            </button>
+          
+        </div>
+
+        <div class="perfume-card">
+            <img src="Bleu de Chanel.png" alt="Perfume">
+            <h3>Bleu de Chanel</h3>
+            <p>Elegant and timeless scent.</p>
+            <span>350 DT</span>
+            <button onclick="openOrderModal('Bleu de Chanel')">
+                Order via WhatsApp
+            </button>
+          
+        </div>
+
+        <div class="perfume-card">
+            <img src="Creed Aventus.png" alt="Perfume">
+            <h3>Creed Aventus</h3>
+            <p>Luxury fragrance for leaders.</p>
+            <span>550 DT</span>
+            <button onclick="openOrderModal('Creed Aventus')">    
+            Order via WhatsApp
+           </button>
+           <div class="badge">
+                Best Seller
+           </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+
+        <div class="contact-card">
+            <h3>WhatsApp</h3>
+            <p>+216 12 345 678</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p>contact@luxuryperfume.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Instagram</h3>
+            <p>@luxuryperfume</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Order Modal -->
+<div class="modal" id="orderModal">
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <h2>Complete Your Order</h2>
+
+        <form id="orderForm">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <button type="submit">
+                Continue to WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+</div>
+    <script src="script.js"></script>
+    
+
+
+    <footer>
+
+    <p>
+        © 2026 Luxury Perfume. All Rights Reserved.
+    </p>
+
+</footer>
+</body>
+</html>

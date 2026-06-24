@@ -4,7 +4,6 @@
 
 /*
 Reset:
-إزالة الـ margin و padding الافتراضيين من جميع العناصر.
 */
 
 *{
@@ -13,14 +12,7 @@ Reset:
     box-sizing:border-box;
 }
 
-/*
-html:
-scroll-behavior يجعل الانتقال بين الأقسام Smooth.
 
-scroll-padding-top:
-لأن الـNavbar ثابتة (Fixed)،
-حتى لا تغطي عنوان الـSection.
-*/
 
 html{
 
@@ -29,11 +21,6 @@ html{
 
 }
 
-/*
-body:
-الستايل العام للموقع.
-overflow-x:hidden يمنع ظهور Scroll أفقي.
-*/
 
 body{
 
@@ -58,15 +45,7 @@ body{
    2. NAVBAR
    ========================================================== */
 
-/*
-Navbar ثابتة أعلى الصفحة.
 
-position:fixed
-يبقيها دائماً ظاهرة.
-
-z-index
-يجعلها فوق جميع العناصر.
-*/
 .navbar{
     position: fixed;
     top: 0;
@@ -209,15 +188,7 @@ Mobile Menu Button
    3. HERO SECTION
    ========================================================== */
 
-/*
-يتكون من:
 
-- Background Image
-- Dark Overlay
-- Title
-- Description
-- Button
-*/
 .hero {
     min-height: 90vh;
 
@@ -239,10 +210,7 @@ rgba(0,0,0,.55)
     background-size: cover;
     background-position: center;
     padding-top:100px;
-    /*
-تحريك الخلفية ببطء
-حتى تعطي إحساس بالحياة.
-*/
+
     animation: heroZoom 12s ease-in-out infinite alternate;
 }
 
@@ -262,9 +230,7 @@ to{
 
 .hero-content {
     max-width: 700px;
-    /*
-Animation عند دخول الصفحة.
-*/
+
     animation:fadeUp 1.2s ease;
 
 }
@@ -325,10 +291,7 @@ transform:translateY(0);
     box-shadow:0 10px 30px rgba(255,215,0,.25);
 
 
-    /*
-حركة بسيطة للزر
-حتى يلفت الانتباه.
-*/
+
         animation: floatButton 3s ease-in-out infinite;
 }
 
@@ -364,9 +327,7 @@ box-shadow:0 15px 40px rgba(255,215,0,.45);
    4. COLLECTION SECTION
    ========================================================== */
 
-/*
-قسم عرض المنتجات.
-*/
+
 .collection {
 padding:100px 8%;
     text-align: center;
@@ -382,20 +343,7 @@ padding:100px 8%;
 
 
 
-/*
-CSS Grid
 
-auto-fit
-
-يحسب عدد الأعمدة تلقائياً.
-
-minmax()
-
-أقل عرض للبطاقة 250px.
-
-إذا بقيت مساحة
-تتمدد البطاقات تلقائياً.
-*/
 .perfume-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -406,17 +354,7 @@ minmax()
 
 
 
-/*
-بطاقة المنتج.
 
-display:flex
-
-حتى نستطيع استعمال
-
-margin-top:auto
-
-للزر.
-*/
 .perfume-card {
     display:flex;
 
@@ -440,19 +378,7 @@ transition:.35s;
 
 
 
-/*
-Badge
 
-تستعمل لإظهار:
-
-Best Seller
-
-New
-
-Premium
-
-...
-*/
 .badge{
 
 position:absolute;
@@ -495,12 +421,7 @@ border-color:rgba(255,215,0,.25);
 
 
 
-/*
-object-fit:cover
 
-يحافظ على حجم الصورة
-دون تشويه.
-*/
 .perfume-card img{
 
 width:100%;
@@ -572,10 +493,7 @@ background:#FFD84D;
    5. ORDER MODAL
    ========================================================== */
 
-/*
-نافذة إدخال المعلومات
-قبل إرسال الطلب إلى WhatsApp.
-*/
+
 .modal {
     display: none;
 
@@ -607,9 +525,7 @@ background:#FFD84D;
 
     position: relative;
 
-    /*
-Animation عند فتح الـModal.
-*/
+
     animation:popup .35s ease;
 
 }
@@ -740,9 +656,6 @@ transform:scale(1);
    6. CONTACT SECTION
    ========================================================== */
 
-/*
-معلومات التواصل.
-*/
 
 
 .contact {
@@ -852,11 +765,7 @@ transition:.35s;
    8. FLOATING WHATSAPP BUTTON
    ========================================================== */
 
-/*
-زر ثابت أسفل الصفحة.
 
-يسمح للعميل بالتواصل بسرعة.
-*/
 .floating-whatsapp:hover{
 
 transform:scale(1.15);
@@ -866,9 +775,6 @@ transform:scale(1.15);
 
 /*
 Pulse Animation
-
-يجذب انتباه المستخدم
-دون إزعاج.
 */
 @keyframes pulse{
 
@@ -897,11 +803,7 @@ transform:scale(1);
    9. GLOBAL COMPONENTS
    ========================================================== */
 
-/*
-نجعل جميع الأزرار
-ترث نفس الخط
-المستخدم في الموقع.
-*/
+
 button{
 
 font-family:inherit;

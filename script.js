@@ -50,7 +50,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
     const phoneNumber = document.getElementById("customerPhone").value;
 
-    const whatsappNumber = "+216 53031727";
+    const whatsappNumber = "21653031727";
 
     const message =
 `Hello, I would like to order ${selectedPerfume}.

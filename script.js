@@ -3,9 +3,7 @@
    1. GLOBAL VARIABLES
    ========================================================== */
 
-/*
-يحفظ اسم المنتج الذي اختاره المستخدم.
-*/
+
 let selectedPerfume = "";
 
 
@@ -14,10 +12,7 @@ let selectedPerfume = "";
    2. OPEN ORDER MODAL
    ========================================================== */
 
-/*
-تفتح نافذة الطلب
-وتحفظ اسم المنتج.
-*/
+
 function openOrderModal(productName) {
     selectedPerfume = productName;
 
@@ -32,9 +27,7 @@ function openOrderModal(productName) {
    3. CLOSE MODAL
    ========================================================== */
 
-/*
-إغلاق الـModal عند الضغط على ×
-*/
+
 document.querySelector(".close-btn").addEventListener("click", () => {
     document.getElementById("orderModal").style.display = "none";
 });
@@ -48,19 +41,7 @@ document.querySelector(".close-btn").addEventListener("click", () => {
    4. ORDER FORM
    ========================================================== */
 
-/*
-- منع Refresh
 
-- أخذ البيانات
-
-- إنشاء رسالة WhatsApp
-
-- فتح WhatsApp
-
-- إغلاق الـModal
-
-- تنظيف الـForm
-*/
 document.getElementById("orderForm").addEventListener("submit", function (e) {
 
     e.preventDefault();
@@ -69,7 +50,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
     const phoneNumber = document.getElementById("customerPhone").value;
 
-    const whatsappNumber = "53031727";
+    const whatsappNumber = "+216 53031727";
 
     const message =
 `Hello, I would like to order ${selectedPerfume}.
@@ -92,10 +73,7 @@ Phone: ${phoneNumber}`;
    5. MOBILE MENU
    ========================================================== */
 
-/*
-فتح وإغلاق القائمة
-في الهاتف.
-*/
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
